@@ -1,0 +1,16 @@
+.header {
+    align-items: center;
+    height: pixelToRem(60);
+
+    &__logo {
+        width: pixelToRem(40);
+        height: pixelToRem(40);
+
+    }
+
+    &__cta {
+        @extend .btn;
+        @extend .btn--primary;
+        @extend .btn--lg;
+    }
+}

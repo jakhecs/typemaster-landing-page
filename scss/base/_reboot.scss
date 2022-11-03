@@ -1,0 +1,11 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $ff-primary;
+    color: $color-primary-light-01;
+}
+
+a {
+    text-decoration: none;
+}

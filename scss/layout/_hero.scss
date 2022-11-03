@@ -1,0 +1,62 @@
+.cta{
+    margin-top: 2rem;
+
+}
+
+.hero {
+    margin-top: pixelToRem(64);
+
+    @include  breakpoint-up(desktop) {
+        margin-top: pixelToRem(83);
+    }
+
+
+    &__description {
+        &::after {
+            content: "";
+            // background-image: url(./../../assets/images/mobile/image-keyboard.jpg);
+        }
+    }
+    &__title {
+        font-size: $font-size-xl;
+        font-weight: $font-w-bolder;
+        text-transform: uppercase;
+        line-height: 1;
+        color: $color-primary-01;
+
+        @include  breakpoint-up(desktop) {
+            font-size: $font-size-xxl;
+        }
+    }
+
+    &__text {
+        font-size: $font-size-sm;
+        line-height: 1.625;
+        margin-top: 2rem;
+
+        @include  breakpoint-up(desktop) {
+            margin-top: pixelToRem(24);
+        }
+    }
+
+    &__cta {
+        @extend .btn;
+        @extend .btn--accent;
+        @extend .btn--lg;
+        margin-right: 2rem;
+
+    }
+
+    &__image {
+        width: 100%;
+        margin-top: pixelToRem(64);
+        position: relative; 
+
+         img {
+            border-radius: pixelToRem(20);
+            width: 100%;
+            position: absolute;
+            left: 1.5rem ;
+        }
+    }
+}

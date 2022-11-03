@@ -1,0 +1,49 @@
+.flex {
+    display: flex;
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-jc-sb{
+        justify-content: space-between;
+    }
+}
+
+.container {
+    padding-top: 1.5rem;
+    padding-inline: 1.5rem;
+
+    @include breakpoint-up(tablet) {
+        padding: pixelToRem(40);
+    }
+
+    @include breakpoint-up(desktop) {
+        padding: pixelToRem(55) pixelToRem(165);
+    }
+}
+
+// cacher sur ... = hide for!
+
+.hide-for-desktop-and-tablet { 
+    @include breakpoint-up(tablet) {
+        display: none;
+    }
+}
+
+.hide-for-mobile-and-tablet {
+    @include breakpoints-down(desktop) {
+        
+        display: none;
+    }
+}
+
+.hide-for-mobile-and-desktop {
+    @include breakpoint-up(desktop) {
+        display: none;
+    }
+
+    @include breakpoints-down(tablet) {
+        display: none;
+    }
+}

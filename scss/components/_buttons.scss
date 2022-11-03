@@ -1,0 +1,36 @@
+.btn {
+    border: none;
+    border-radius: 0.5rem;
+    color: $color-secondary-light-01;
+    text-transform: uppercase;
+    font-size: $font-size-sm;
+    font-weight: $font-w-bold;
+
+    &--accent {
+        background-color: $color-accent-01;
+
+        &:hover {
+            background-color: $color-accent-light-01;
+        }
+    }
+
+    &--primary {
+        background-color: $color-secondary-01;
+        color: $color-primary-01; 
+
+        &:hover {
+            background-color: $color-primary-01;
+            color: $color-secondary-light-01;
+        }
+    }
+
+    &--lg {
+        padding: 0.6875rem 0.875rem;
+    }
+
+    @include breakpoint-up( tablet) {
+        &--lg {
+            padding: 1rem 1.5rem;
+        }
+    }
+}
