@@ -1,6 +1,6 @@
 $breakpoints-up: ("mobile": "23.5rem", "tablet": "48rem", "desktop": "90rem");
 
-$breakpoints-down: ("mobile": "23.5rem", "tablet": "48rem", "desktop": "90rem");
+$breakpoints-down: ("mobile": "23.499rem", "tablet": "47.999rem", "desktop": "89.999rem");
 
 
 @mixin breakpoint-up($size) {
